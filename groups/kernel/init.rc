@@ -87,3 +87,6 @@ on early-init
 
 on boot
 	setrlimit 8 8388608 8388608
+
+on fs
+	write /proc/sys/kernel/unprivileged_bpf_disabled 1
